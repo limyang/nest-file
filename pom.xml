@@ -23,6 +23,10 @@
 			<id>hadoop snapshots</id>
 			<url>http://nxrepository.corp.ebay.com/nexus/content/repositories/hadoop.snapshots/</url>
 		</repository>
+		<repository>
+			<id>ebay internal central</id>
+			<url>http://nxrepository.corp.ebay.com/nexus/content/groups/public/</url>
+		</repository>
 	</repositories>
 	<dependencies>
 		<dependency>
@@ -107,11 +111,6 @@
 					<descriptorRefs>
 						<descriptorRef>jar-with-dependencies</descriptorRef>
 					</descriptorRefs>
-					<archive>
-						<manifest>
-							<mainClass>com.ebay.nest.NestEngine</mainClass>
-						</manifest>
-					</archive>
 				</configuration>
 			</plugin>
 			<plugin>
